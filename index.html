@@ -159,10 +159,11 @@ function finishTest(){
         Non risposte: ${nonRisposte}
     `;
 
-    inviaASheet(punteggio,percentuale,corrette,sbagliate,nonRisposte) }
+    inviaASheet(punteggio,percentuale,corrette,sbagliate,nonRisposte);
+}
 
 function inviaASheet(punteggio,percentuale,corrette,sbagliate,nonRisposte){
-    fetch("https://script.google.com/macros/s/AKfycbwujmKoImyZouQgzkSVbn7JLZsTeKeMwF405f6P1IuaS4KrFqQWsVW2e-cU2-fvjDipiw/exec" {
+    fetch("YOUR_SCRIPT_URL_HERE",{
         method:"POST",
         mode:"no-cors",
         headers:{"Content-Type":"application/json"},
